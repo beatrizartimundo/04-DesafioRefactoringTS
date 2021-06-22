@@ -9,7 +9,6 @@ export interface IFood {
   name:string;
   description:string;
   price:string;
-  // available:boolean;
   image:string;
 }
 
@@ -20,7 +19,6 @@ interface FoodProps {
 }
 
 export default function Food({ food, handleEditFood, handleDelete }: FoodProps) {
-  // const { available } = food;
   const [isAvailable, setIsAvailable] = useState(false)
 
   async function toggleAvailable () {
